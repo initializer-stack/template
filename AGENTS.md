@@ -5,7 +5,7 @@
 
 ## 에이전트 지시
 
-- 지시는 `AGENTS.md` 에 쓴다. 같은 폴더의 `CLAUDE.md` 는 그 파일로 가는 심볼릭 링크일 뿐이다. 새 `AGENTS.md` 를 만들면 `ln -s AGENTS.md CLAUDE.md`.
+- 지시는 `AGENTS.md` 에 쓴다. 같은 폴더의 `CLAUDE.md` 는 `@AGENTS.md` 한 줄로 그 파일을 불러올 뿐이다. 새 `AGENTS.md` 를 만들면 옆에 같은 `CLAUDE.md` 를 둔다.
 - **가까운 `AGENTS.md` 가 우선한다.** 이 파일은 레포 전체에서 꼭 지킬 것만, 서버 · 앱마다 하나씩 있는 것(`servers/<서버>`,
   `clients/apps/<앱>`)은 그 서버 · 앱의 구조 · 명령 · 도구 · 테스트 방법을 갖는다. 둘이 다르면 서버 · 앱 것을 따른다.
 - 단 채택된 ADR(`docs/decisions/`)은 영역 규칙보다 앞선다. 영역에서 다르게 하려면 ADR 을 먼저 바꾼다.
